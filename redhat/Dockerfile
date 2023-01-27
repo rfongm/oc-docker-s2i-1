@@ -2,5 +2,6 @@
 
 FROM registry.access.redhat.com/ubi7:latest
 
-CMD ["/bin/bash", "-c", "sleep infinity"]
-# CMD ["/bin/bash", "-c", "--", "while true; do sleep 30; done;"]
+# Cambiar los parametros para generar una nueva salida el OCP del POD
+# CMD ["/bin/bash", "-c", "sleep infinity"]
+CMD ["/bin/bash", "-c", "--", "while true; do sleep 30; done;"]
